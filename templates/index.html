@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Neumorphism</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <script src="https://kit.fontawesome.com/4f61f8988e.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body class="flex-column">
+    <div class="flex-row" style="font-size: 4rem; justify-content: flex-start;">
+        <span class="neumorphic outset" style="padding: 0.5vmax 1vmax;">JT Raber</span>
+        <div class="flex-column" style="align-items: flex-start; justify-content: space-around;">
+            <span class="neumorphic inset" style="font-size: 0.33em; font-weight: 100; padding: 0.75vmax; width: 40vw;">Level 100 Technomancer (B.Sc. Computer Science)</span>
+            <span class="neumorphic inset" style="font-size: 0.33em; font-weight: 100; padding: 0.75vmax; width: 40vw;">Level 50 Mathemagician (B.Sc. Applied Mathematics)</span>
+        </div>
+    </div>
+    <div class="neumorphic outset flex-column" style="font-size: 2rem;">
+        <span class="neumorphic inset" style="font-weight: 100;">Freelance Work</span>
+        <div class="flex-row" style="align-items: flex-start; flex-wrap: wrap;">
+            {% for key, value in jobs.items() %}
+            <div class="neumorphic inset flex-column">
+                <h1>{{key}}</h1>
+                <p style="width: 30ch;">{{value}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="neumorphic inset flex-row" style="font-size: 2rem;">
+        {% for key, value in sites.items() %}
+        <a href="/sites/{{key}}" target="_blank" class="clickable social neumorphic outset flex-row" style="background-color: {{value['color']}};">
+            <span class="fab fa-{{key}}" style="font-size: 1.5rem; color: var(--prim);"></span>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

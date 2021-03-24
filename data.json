@@ -1,0 +1,14 @@
+{
+    "sites": {
+        "youtube": { "url": "https://www.youtube.com/JMANN240", "color": "#c4302b" },
+        "github": { "url": "https://github.com/JMANN240", "color": "#4078c0" },
+        "stack-overflow": { "url": "https://stackoverflow.com/users/14108612/jt-raber", "color": "#f48024" },
+        "linkedin": { "url": "https://www.linkedin.com/in/johnathon-raber-926b63209/", "color": "#2867b2" }
+    },
+    "jobs": {
+        "Escape Room": "I created an interface for a simulated CCTV in an escape room. This project utilized SSH technology in conjuction with Python to send commands to a remote server for the game.",
+        "Drowsy Driver": "I created a system that uses a heart rate monitor and an IR camera to detect when a driver is falling asleep while driving. The project used image recognition to detect when the driver's eyes were closed for a given amount of time and would alert them with a buzzer and flashing light accordingly.",
+        "Internet Radio": "I created an internet radio/mp3 player using a Raspberry Pi. The audio source was controlled using a rotary encoder attached to the Pi, and the play/pause functionality was added using buttons.",
+        "Test Grader": "I used openCV to create an automatic test grader that scans a test sheet like a scantron and tells the user their score. This job was rather challenging due to my then lack of experience using computer vision."
+    }
+}
