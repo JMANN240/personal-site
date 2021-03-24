@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Neumorphism</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo16x16.png') }}" sizes="16x16">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
     <script src="https://kit.fontawesome.com/4f61f8988e.js" crossorigin="anonymous" defer></script>
 </head>
@@ -29,8 +30,8 @@
     </div>
     <div class="neumorphic inset flex-row" style="font-size: 2rem;">
         {% for key, value in sites.items() %}
-        <a href="/sites/{{key}}" target="_blank" class="clickable social neumorphic outset flex-row" style="background-color: {{value['color']}};">
-            <span class="fab fa-{{key}}" style="font-size: 1.5rem; color: var(--prim);"></span>
+        <a href="/sites/{{key}}" target="_blank" class="clickable social neumorphic outset flex-row" style="color: {{value['color']}};">
+            <span class="fab fa-{{key}}" style="font-size: 1.5rem;"></span>
         </a>
         {% endfor %}
     </div>
